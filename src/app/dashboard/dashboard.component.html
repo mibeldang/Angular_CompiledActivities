@@ -1,0 +1,14 @@
+<div class='body'>
+    <br>
+    <h1 class="external">Activity 4</h1>
+    <!-- <h2>Message App</h2> -->
+    <br>
+    <div class="but">
+        <h2>Parent Component</h2>
+        <input type="text" [(ngModel)]="new">
+        <button  (click)="send()">Send</button>
+        <br>
+        <p>Reply from child : {{cdata}}</p>
+        <app-child (childData)="cdata=$event" [parentData]="pdata"> </app-child>
+    </div>
+</div>  

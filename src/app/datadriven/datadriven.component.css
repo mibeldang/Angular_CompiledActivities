@@ -1,0 +1,46 @@
+.body{
+    background-color:palegoldenrod;
+    border: 2px solid black;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+      
+}
+.title{
+    color:teal;
+    text-align: center;
+    font-size:30px
+}
+
+label{
+    font-size:15px
+}
+button{
+    padding: 3px 5px;
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white; 
+    color: black; 
+    border: 3px solid #008CBA;
+
+}
+button:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color:gainsboro;
+    color: black;
+    border-radius: 4px;
+
+}

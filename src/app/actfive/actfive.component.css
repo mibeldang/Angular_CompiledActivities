@@ -1,0 +1,23 @@
+.body{
+    font-size:17px;
+}
+.but{
+    color:rgb(0, 128, 43);
+    padding: 3px 5px;
+    font-size:17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+.card {
+    background-color: palegoldenrod;
+    box-shadow: 0 6px 12px 0 black;
+    transition: 0.7s;
+    margin-bottom: 40%
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 teal;
+  }
+  

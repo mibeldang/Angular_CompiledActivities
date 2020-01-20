@@ -1,0 +1,34 @@
+<div class='body'>
+    <br>
+    <h1 class="external">Activity 5</h1>
+    <!-- <h2>Message App</h2> -->
+    <br>
+    <div class ="card">
+        <h2>Parent Component</h2>
+        <label>Full Name: </label>
+        <input type="text" [(ngModel)]="nameInput">
+        <br>
+        <label>Enrolled?:
+            <input type="checkbox" [(ngModel)]="enrollInput">
+        </label>
+        <br>
+        <label>Gender:
+            <select [(ngModel)]="genderInput">
+                <option value="Male">Male </option>
+                <option value="Female"> Female</option>
+            </select>
+        </label>
+        <br><br>
+        <button class="but" (click)="submit()">Submit</button>
+        <br>
+        <p *ngIf="cdata">Notifications :{{cdata}} </p>
+        <h2>List of Declined</h2>
+        <ul>
+            <li *ngFor="let student of disStudent">{{student}}</li>
+        </ul>
+    </div>
+    <div class="col2">
+        <app-childfive (datas)="cdata=$event" (declineData)="disStudent=$event" [nameData]="name" [genderData]="gender" [enrollData]="enroll"></app-childfive>
+    </div>
+
+</div>
