@@ -11,6 +11,9 @@ import { ChildfiveComponent } from './childfive/childfive.component';
 import { TemplatedrivenComponent } from './templatedriven/templatedriven.component';
 import { DatadrivenComponent } from './datadriven/datadriven.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpAndServicesComponent } from './http-and-services/http-and-services.component';
+
 
 
 @NgModule({
@@ -22,13 +25,16 @@ import {ReactiveFormsModule} from '@angular/forms';
     ActfiveComponent,
     ChildfiveComponent,
     TemplatedrivenComponent,
-    DatadrivenComponent
+    DatadrivenComponent,
+    HttpAndServicesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+
   ],
 
   providers: [],

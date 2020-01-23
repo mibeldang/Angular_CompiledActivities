@@ -1,0 +1,23 @@
+<p>HTTP and SERVICES</p>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Website</th>
+        <th>Company</th>
+    </tr>
+    <tr *ngFor="let one of datalist">
+        <td>{{one.id}}</td>
+        <td>{{one.name}}</td>
+        <td>{{one.username}}</td>
+        <td>{{one.email}}</td>
+        <td>{{one.address}}</td>
+        <td>{{one.phone}}</td>
+        <td>{{one.website}}</td>
+        <td>{{one.company}}</td>
+    </tr>
+</table>
